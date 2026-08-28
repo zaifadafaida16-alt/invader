@@ -17,7 +17,7 @@ import random
 # ------------------------------------------------------------------
 # CONFIG - tweak these to match your game's scale / sprite sizes
 # ------------------------------------------------------------------
-ALIEN_ROWS = 5
+ALIEN_ROWS = 4
 ALIEN_COLS = 11
 ALIEN_H_SPACING = 50
 ALIEN_V_SPACING = 40
