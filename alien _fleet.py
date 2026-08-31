@@ -1,22 +1,28 @@
-"""
-Alien Fleet module for Space Invaders (PyGame)
-------------------------------------------------
-Covers the requirement:
-  "The full invaders array should include the three types of aliens.
-   These should move from side to side, and fire at the player at
-   random. Their speed of movement should increase as the invaders
-   are reduced in number (from being shot)."
-
-Drop this alongside your existing game code and wire it up to your
-main loop (see the bottom of the file for an integration sketch).
-"""
-
 import pygame
-import random
 
-# ------------------------------------------------------------------
-# CONFIG - tweak these to match your game's scale / sprite sizes
-# ------------------------------------------------------------------
+pygame.init()
+
+SCREEN_WIDTH = 750
+SCREEN_HEIGHT = 700
+
+GREY = (29, 29, 27)
+screen = pygame.display .setmode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("Python Space Invaders")
+
+clock = pygame.time.Clock()
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    pygame.display.update()
+    clock.tick(60)
+
+    #Drawing
+    screen.fill(GREY)
+
 ALIEN_ROWS = 4
 ALIEN_COLS = 11
 ALIEN_H_SPACING = 50
