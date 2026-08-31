@@ -1,5 +1,7 @@
 import pygame, sys
 from spaceship import Spaceship
+from laser import Laser
+
 pygame.init()
 
 SCREEN_WIDTH = 500
